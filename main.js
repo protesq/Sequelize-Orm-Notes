@@ -161,3 +161,14 @@ try{
     sequelize.close();
     console.log('Connection closed.');
 }
+
+// destroy - Veritabanındaki bir kayıt silme
+try{
+    const destroyedUser = await User_test.destroy({where: {id: 1}});
+    console.log('User destroyed:', destroyedUser.toJSON());
+} catch (error) {
+    console.error('Unable to destroy user:', error);
+} finally {
+    sequelize.close();
+    console.log('Connection closed.');
+}

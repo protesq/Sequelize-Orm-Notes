@@ -5,6 +5,14 @@ MySQL veritabanı ile Sequelize ORM kullanımını gösteren basit bir Node.js p
 ## Kurulum
 
 ```bash
+npm install sequelize mysql2
+# or
+yarn add sequelize mysql2
+```
+
+Projeyi klonladıysan:
+
+```bash
 npm install
 ```
 
